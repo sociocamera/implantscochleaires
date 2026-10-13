@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implants Cochléaires : Recherche et Documentation Audiovisuelle</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        academic: {
+                            50: '#f4f6f8',
+                            100: '#e1e7ec',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            accent: '#2563eb',
+                            gold: '#d97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-academic-50 text-academic-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-academic-accent selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-academic-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded bg-academic-900 text-white flex items-center justify-center font-serif font-bold text-lg">IC</div>
+                <div>
+                    <span class="block font-serif font-bold text-sm sm:text-base text-academic-900">Projet de Recherche</span>
+                    <span class="block text-xs text-slate-500">Implants Cochléaires & Inclusion</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#post-production" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Post-production</a>
+                <a href="#assemblage" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Assemblage</a>
+                <a href="#pre-montage" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Pré-montage</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-academic-800 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-academic-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#post-production" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Post-production</a>
+            <a href="#assemblage" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Assemblage</a>
+            <a href="#pre-montage" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Pré-montage</a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-28">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="bg-white border border-academic-100 rounded-2xl p-8 sm:p-12 shadow-sm">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3 py-1 bg-academic-100 text-academic-900 rounded-full text-xs font-semibold tracking-wide uppercase mb-4">Recherche Académique & Sociologie Visuelle</span>
+                    <h1 class="text-3xl sm:text-5xl font-serif font-bold text-academic-900 tracking-tight mb-6">Implants cochléaires : Trajectoires d'inclusion et pratiques scolaires</h1>
+                    <p class="text-lg text-slate-600 leading-relaxed font-normal mb-8">
+                        Ce portail multimédia rassemble les matériaux empiriques de notre recherche sociologique. Suivant une démarche rigoureuse, il documente l'ensemble du processus méthodologique : du pré-montage exploratoire aux capsules de post-production analytique.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#post-production" class="px-6 py-3 bg-academic-900 text-white font-medium rounded-xl hover:bg-academic-accent transition-colors shadow-sm">Post-production</a>
+                        <a href="#assemblage" class="px-6 py-3 bg-white border border-slate-300 text-academic-800 font-medium rounded-xl hover:bg-slate-50 transition-colors">Assemblage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="post-production" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
+            <div class="border-b border-slate-200 pb-5 mb-8 flex flex-col sm:flex-row sm:items-end justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-academic-accent">Section 01</span>
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-academic-900 mt-1">Post-production</h2>
+                </div>
+                <p class="text-sm text-slate-500 mt-2 sm:mt-0 max-w-md">Synthèse analytique et restitution visuelle des entretiens et observations menés auprès des familles et intervenants.</p>
+            </div>
+            <div class="bg-white rounded-xl border border-academic-100 p-12 text-center shadow-sm">
+                <p class="text-slate-500 text-lg italic">Non encore disponible...</p>
+            </div>
+        </section>
+
+        <section id="assemblage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
+            <div class="border-b border-slate-200 pb-5 mb-8 flex flex-col sm:flex-row sm:items-end justify-between">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-academic-accent">Section 02</span>
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-academic-900 mt-1">Assemblage</h2>
+                </div>
+                <p class="text-sm text-slate-500 mt-2 sm:mt-0 max-w-md">Assemblage des vidéos du pré-montage à partir des directives d'Audrey.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col">
+                    <div class="relative aspect-video bg-black flex items-center justify-center">
+                        <span class="text-white font-medium text-lg">À venir</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 01</h3>
+                            <p class="text-sm text-slate-600">Non encore disponible.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Assemblage - Archive #A1</span><span class="font-medium text-academic-900">00:00 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col">
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center cursor-pointer open-modal group" data-video-src="https://drive.google.com/file/d/1-nv_el6I0obwSKXXYJDuTXojINKrWDYF/preview">
+                        <img src="https://lh3.googleusercontent.com/d/1FfnPUDas3x4vWvx1Mjed4V5kwpsTXJGr" alt="Balado 02" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/25 transition-colors flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-academic-900/85 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-academic-accent transition-all">
+                                <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 02</h3>
+                            <p class="text-sm text-slate-600">Présentation de la méthodologie et des résultats de l'étude.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">16:23 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col">
+                    <div class="relative aspect-video bg-black flex items-center justify-center">
+                        <span class="text-white font-medium text-lg">À venir</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 03</h3>
+                            <p class="text-sm text-slate-600">Non encore disponible.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Assemblage - Archive #A3</span><span class="font-medium text-academic-900">00:00 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col">
+                    <div class="relative aspect-video bg-black flex items-center justify-center">
+                        <span class="text-white font-medium text-lg">À venir</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 04</h3>
+                            <p class="text-sm text-slate-600">Non encore disponible.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Assemblage - Archive #A4</span><span class="font-medium text-academic-900">00:00 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col md:col-span-2 lg:col-span-1">
+                    <div class="relative aspect-video bg-black flex items-center justify-center">
+                        <span class="text-white font-medium text-lg">À venir</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 05</h3>
+                            <p class="text-sm text-slate-600">Non encore disponible.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span>Assemblage - Archive #A5</span><span class="font-medium text-academic-900">00:00 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Pré-montage (Générée dynamiquement) -->
+        <section id="pre-montage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
+            <div class="border-b border-slate-200 pb-5 mb-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-academic-accent">Section 03</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-academic-900 mt-1">Pré-montage</h2>
+                <p class="text-sm text-slate-500 mt-2">Chaque vidéo a été traitée (étalonnage, colorimétrie, uniformisation audio). Utilisez les flèches pour faire défiler les blocs de chaque série. Cliquez sur une vignette pour ouvrir le visionnage grand format.</p>
+            </div>
+
+            <!-- Conteneur global injecté par JavaScript -->
+            <div id="pre-montage-container"></div>
+        </section>
+    </main>
+
+    <!-- Fenêtre Modale Vidéo -->
+    <div id="video-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-2xl w-full max-w-6xl relative flex flex-col">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200">
+                <h3 class="font-serif font-bold text-academic-900 text-lg">Visionnage grand format</h3>
+                <button id="close-modal" class="p-2 text-slate-500 hover:text-academic-900 rounded-lg hover:bg-slate-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="relative w-full bg-black" style="padding-top: 56.25%;">
+                <iframe id="modal-iframe" class="absolute inset-0 w-full h-full" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-academic-900 text-white mt-20 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="font-serif font-bold text-lg mb-2">Projet de Recherche sur les Implants Cochléaires</h3>
+                    <p class="text-slate-400 text-sm">Laboratoire de Sociologie Visuelle et d'Études sur l'Inclusion Scolaire.</p>
+                </div>
+                <div class="text-md text-slate-400 md:text-right">
+                    <p>Références APA suggérées : Boucher, N. et al. (2026).</p>
+                    <p class="text-xs text-slate-300 mt-1">Tous droits réservés — Usage académique et de recherche.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du menu mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Données du Pré-montage
+        const preMontageData = {
+            "Balado 01": [
+                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
+            ],
+            "Balado 02": [
+                { title: "Bloc 01", duration: "00:38", videoSrc: "https://drive.google.com/file/d/1pg6K-mKgcnPLDrXlef5ghHO_PB_X_WUE/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 02", duration: "00:50", videoSrc: "https://drive.google.com/file/d/134iwQusVHdN2LWhWXjvkbiPaSoEsZrmt/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 03", duration: "00:38", videoSrc: "https://drive.google.com/file/d/1LljUDPt6H0fJxwa1iKc7r1QM3-G6hxdm/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 04", duration: "00:33", videoSrc: "https://drive.google.com/file/d/13K89NkROu9pwSCM47D3vqeUMYW3X1DoR/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 05", duration: "00:41", videoSrc: "https://drive.google.com/file/d/1KTJS0ySrZacuZFtOzuXnoH8p3WID1fD_/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 06", duration: "00:21", videoSrc: "https://drive.google.com/file/d/1GgvIarZOl_1pwNQFqfK5ir8qMGZkPWxb/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 07", duration: "00:26", videoSrc: "https://drive.google.com/file/d/1ynyQSlleGuv2gyoZnMe-S_VHzxN8VkuZ/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Bloc 08", duration: "02:45", videoSrc: "https://drive.google.com/file/d/1XYN5g6oWOl_gaA0HMu-Uts1n5VnNIsJG/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
+                { title: "Question 01", duration: "03:49", videoSrc: "https://drive.google.com/file/d/1S0PrdWjt1zfw8IxZCThrjzBP8aiJDZus/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
+                { title: "Question 02", duration: "01:31", videoSrc: "https://drive.google.com/file/d/1krUJSuCFMJ5b2ORRCTKZj2J48qdF5pbD/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
+                { title: "Question 03", duration: "03:00", videoSrc: "https://drive.google.com/file/d/1E9_Zzo3RuIhDidEbwB9xJ56VbrTxEteq/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
+                { title: "Question 04", duration: "01:43", videoSrc: "https://drive.google.com/file/d/1zXml032jPYVV3P-_SUFLAHS4GOuQ6_gw/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
+                { title: "Question 05", duration: "01:11", videoSrc: "https://drive.google.com/file/d/1Xemo-E5IqWtKZ7LTw0CrvuR4DV5BHaK9/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" }
+            ],
+            "Balado 03": [
+                { title: "Bloc 01", duration: "01:57", videoSrc: "https://drive.google.com/file/d/1hycUKiYFpBjscl5b7nARJCBxJrNl0hSb/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
+                { title: "Bloc 02", duration: "02:03", videoSrc: "https://drive.google.com/file/d/1NOIas3wJfAVpGvOYpzLBQERbvCUHQFX8/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
+                { title: "Bloc 03", duration: "01:38", videoSrc: "https://drive.google.com/file/d/1h4ScAdG109gYQsIoQ5IFDMIVQQAuUj_7/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
+                { title: "Question 01", duration: "02:50", videoSrc: "https://drive.google.com/file/d/1Ndjjb5-iSlHnTlDcvBNAuA8I-2Sv0h-N/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 02", duration: "05:32", videoSrc: "https://drive.google.com/file/d/1qgamJp4AVMAoNsb7Lp0wYw4jzNAsY1VT/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 03", duration: "05:28", videoSrc: "https://drive.google.com/file/d/1ZEE4wl-SPSVFrX-_8LbZtq6YiPgALVXH/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 04", duration: "04:27", videoSrc: "https://drive.google.com/file/d/1WZz3D-1SbbXDsLE2KtJDP5pDHCzaqt8r/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 05", duration: "16:45", videoSrc: "https://drive.google.com/file/d/18vGN7LH2uLScbv04NHLCTj2zS92saiq-/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 06", duration: "09:47", videoSrc: "https://drive.google.com/file/d/1vf-5sLKmN4iyUtWIk3Kk8wV5vbaRQeBg/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 07", duration: "04:38", videoSrc: "https://drive.google.com/file/d/1lm0RrBiTqFdi41o28hT5pv93kPdLWzai/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 08", duration: "03:07", videoSrc: "https://drive.google.com/file/d/1wGrBLI68Gs2VB_Zm_h2drZBDVQddi1ry/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
+                { title: "Question 09", duration: "05:21", videoSrc: "https://drive.google.com/file/d/1yrf3GJzwzTbfEdr1vylkOgrGfar0xDHK/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" }
+            ],
+            "Balado 04": [
+                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
+            ],
+            "Balado 05": [
+                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
+            ]
+        };
+
+        // Génération dynamique des sliders de pré-montage
+        const preMontageContainer = document.getElementById('pre-montage-container');
+
+        Object.keys(preMontageData).forEach((baladoName, index) => {
+            const sliderId = `slider-${index + 1}`;
+            const items = preMontageData[baladoName];
+
+            const sectionDiv = document.createElement('div');
+            sectionDiv.className = index === Object.keys(preMontageData).length - 1 ? "mb-4" : "mb-12";
+
+            let cardsHtml = '';
+            items.forEach(item => {
+                const hasVideo = item.videoSrc && item.videoSrc !== "";
+                const thumbnailImg = item.thumbnail 
+                    ? `<img src="${item.thumbnail}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover">` 
+                    : '';
+
+                if (hasVideo) {
+                    cardsHtml += `
+                        <div class="flex-none w-80 sm:w-96 bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm">
+                            <div class="relative aspect-video bg-slate-900 cursor-pointer open-modal group flex items-center justify-center" data-video-src="${item.videoSrc}">
+                                ${thumbnailImg}
+                                <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/25 transition-colors flex items-center justify-center">
+                                    <div class="w-12 h-12 rounded-full bg-academic-900/85 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-academic-accent transition-all">
+                                        <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-medium">${item.duration}</span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-serif font-bold text-academic-900 text-base mb-1">${item.title}</h4>
+                                <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                                    <span>${baladoName}</span>
+                                    <span class="font-medium text-academic-900">${item.duration}</span>
+                                </div>
+                            </div>
+                        </div>`;
+                } else {
+                    cardsHtml += `
+                        <div class="flex-none w-80 sm:w-96 bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm">
+                            <div class="relative aspect-video bg-slate-900 flex items-center justify-center">
+                                <span class="text-white text-sm">Non encore disponible</span>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-serif font-bold text-academic-900 text-base mb-1">${item.title}</h4>
+                                <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                                    <span>${baladoName}</span>
+                                    <span class="font-medium text-academic-900">${item.duration} min</span>
+                                </div>
+                            </div>
+                        </div>`;
+                }
+            });
+
+            sectionDiv.innerHTML = `
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-serif font-bold text-academic-900">${baladoName}</h3>
+                    <div class="flex items-center space-x-2">
+                        <button class="slider-prev p-2 rounded-full border border-slate-300 bg-white text-academic-800 hover:bg-slate-100 transition-colors focus:outline-none" data-target="${sliderId}" aria-label="Précédent">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button class="slider-next p-2 rounded-full border border-slate-300 bg-white text-academic-800 hover:bg-slate-100 transition-colors focus:outline-none" data-target="${sliderId}" aria-label="Suivant">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="${sliderId}" class="flex space-x-6 overflow-x-auto no-scrollbar scroll-smooth pb-4 pt-2 px-1">
+                    ${cardsHtml}
+                </div>`;
+
+            preMontageContainer.appendChild(sectionDiv);
+        });
+
+        // Contrôles de défilement horizontal Netflix-style
+        document.querySelectorAll('.slider-prev').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const container = document.getElementById(targetId);
+                if (container) {
+                    container.scrollBy({ left: -350, behavior: 'smooth' });
+                }
+            });
+        });
+
+        document.querySelectorAll('.slider-next').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const container = document.getElementById(targetId);
+                if (container) {
+                    container.scrollBy({ left: 350, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Gestion de la modale vidéo avec lecture automatique
+        const modal = document.getElementById('video-modal');
+        const modalIframe = document.getElementById('modal-iframe');
+        const closeModal = document.getElementById('close-modal');
+
+        document.addEventListener('click', (e) => {
+            const trigger = e.target.closest('.open-modal');
+            if (trigger) {
+                let videoSrc = trigger.getAttribute('data-video-src');
+                if (videoSrc) {
+                    videoSrc += videoSrc.includes('?') ? '&autoplay=1' : '?autoplay=1';
+                    modalIframe.src = videoSrc;
+                    modal.classList.remove('hidden');
+                }
+            }
+        });
+
+        const closeModalFunc = () => {
+            modal.classList.add('hidden');
+            modalIframe.src = '';
+        };
+
+        closeModal.addEventListener('click', closeModalFunc);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModalFunc();
+            }
+        });
+    </script>
+</body>
+</html>
