@@ -56,7 +56,6 @@
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
                 <a href="#post-production" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Post-production</a>
                 <a href="#assemblage" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Assemblage</a>
-                <a href="#pre-montage" class="text-academic-800 hover:text-academic-accent transition-colors py-2 border-b-2 border-transparent hover:border-academic-accent">Pré-montage</a>
             </nav>
             <div class="md:hidden flex items-center">
                 <button id="mobile-menu-btn" class="text-academic-800 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
@@ -69,7 +68,6 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-academic-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
             <a href="#post-production" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Post-production</a>
             <a href="#assemblage" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Assemblage</a>
-            <a href="#pre-montage" class="block px-3 py-2 rounded-md text-base font-medium text-academic-800 hover:bg-slate-100">Pré-montage</a>
         </div>
     </header>
 
@@ -129,7 +127,7 @@
                             <p class="text-sm text-slate-600">Brève histoire de l'implant cochléaire au Québec.</p>
                         </div>
                         <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">16:23 min</span>
+                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">20:58 min</span>
                         </div>
                     </div>
                 </div>
@@ -150,23 +148,28 @@
                             <p class="text-sm text-slate-600">Présentation de la méthodologie et des résultats de l'étude.</p>
                         </div>
                         <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">16:23 min</span>
+                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">16:36 min</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case 3 -->
                 <div class="bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm transition-shadow flex flex-col">
-                    <div class="relative aspect-video bg-black flex items-center justify-center">
-                        <span class="text-white font-medium text-lg">À venir</span>
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center cursor-pointer open-modal group" data-video-src="https://drive.google.com/file/d/1r0lqf1sGi2eoBAxhP91ErR3eM30twdT_/preview">
+                        <img src="https://lh3.googleusercontent.com/d/1ww2Kk0A8TnB_3MN3M998gFEOh-ni9ILH" alt="Balado 02" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/25 transition-colors flex items-center justify-center">
+                            <div class="w-12 h-12 rounded-full bg-academic-900/85 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-academic-accent transition-all">
+                                <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6 flex-grow flex flex-col justify-between">
                         <div>
                             <h3 class="font-serif font-bold text-academic-900 text-lg mt-1 mb-2">Balado 03</h3>
-                            <p class="text-sm text-slate-600">Non encore disponible.</p>
+                            <p class="text-sm text-slate-600">Les impacts sur les gens implantés.</p>
                         </div>
                         <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span>Assemblage - Archive #A3</span><span class="font-medium text-academic-900">00:00 min</span>
+                            <span>Assemblage - Archive #A2</span><span class="font-medium text-academic-900">25:07 min</span>
                         </div>
                     </div>
                 </div>
@@ -203,18 +206,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Section Pré-montage (Générée dynamiquement) -->
-        <section id="pre-montage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
-            <div class="border-b border-slate-200 pb-5 mb-8">
-                <span class="text-xs font-bold uppercase tracking-wider text-academic-accent">Section 03</span>
-                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-academic-900 mt-1">Pré-montage</h2>
-                <p class="text-sm text-slate-500 mt-2">Chaque vidéo a été traitée (étalonnage, colorimétrie, uniformisation audio). Utilisez les flèches pour faire défiler les blocs de chaque série. Cliquez sur une vignette pour ouvrir le visionnage grand format.</p>
-            </div>
-
-            <!-- Conteneur global injecté par JavaScript -->
-            <div id="pre-montage-container"></div>
         </section>
     </main>
 
@@ -262,142 +253,6 @@
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Données du Pré-montage
-        const preMontageData = {
-            "Balado 01": [
-                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
-            ],
-            "Balado 02": [
-                { title: "Bloc 01", duration: "00:38", videoSrc: "https://drive.google.com/file/d/1pg6K-mKgcnPLDrXlef5ghHO_PB_X_WUE/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 02", duration: "00:50", videoSrc: "https://drive.google.com/file/d/134iwQusVHdN2LWhWXjvkbiPaSoEsZrmt/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 03", duration: "00:38", videoSrc: "https://drive.google.com/file/d/1LljUDPt6H0fJxwa1iKc7r1QM3-G6hxdm/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 04", duration: "00:33", videoSrc: "https://drive.google.com/file/d/13K89NkROu9pwSCM47D3vqeUMYW3X1DoR/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 05", duration: "00:41", videoSrc: "https://drive.google.com/file/d/1KTJS0ySrZacuZFtOzuXnoH8p3WID1fD_/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 06", duration: "00:21", videoSrc: "https://drive.google.com/file/d/1GgvIarZOl_1pwNQFqfK5ir8qMGZkPWxb/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 07", duration: "00:26", videoSrc: "https://drive.google.com/file/d/1ynyQSlleGuv2gyoZnMe-S_VHzxN8VkuZ/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Bloc 08", duration: "02:45", videoSrc: "https://drive.google.com/file/d/1XYN5g6oWOl_gaA0HMu-Uts1n5VnNIsJG/preview", thumbnail: "https://lh3.googleusercontent.com/d/17kiIk4h-H6sxyTYqVc_dugQT2h7wuP6F" },
-                { title: "Question 01", duration: "03:49", videoSrc: "https://drive.google.com/file/d/1S0PrdWjt1zfw8IxZCThrjzBP8aiJDZus/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
-                { title: "Question 02", duration: "01:31", videoSrc: "https://drive.google.com/file/d/1krUJSuCFMJ5b2ORRCTKZj2J48qdF5pbD/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
-                { title: "Question 03", duration: "03:00", videoSrc: "https://drive.google.com/file/d/1E9_Zzo3RuIhDidEbwB9xJ56VbrTxEteq/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
-                { title: "Question 04", duration: "01:43", videoSrc: "https://drive.google.com/file/d/1zXml032jPYVV3P-_SUFLAHS4GOuQ6_gw/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" },
-                { title: "Question 05", duration: "01:11", videoSrc: "https://drive.google.com/file/d/1Xemo-E5IqWtKZ7LTw0CrvuR4DV5BHaK9/preview", thumbnail: "https://lh3.googleusercontent.com/d/19aHgcZe0zVac6VtsPIMk1lDSQyaYPUNg" }
-            ],
-            "Balado 03": [
-                { title: "Bloc 01", duration: "01:57", videoSrc: "https://drive.google.com/file/d/1hycUKiYFpBjscl5b7nARJCBxJrNl0hSb/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
-                { title: "Bloc 02", duration: "02:03", videoSrc: "https://drive.google.com/file/d/1NOIas3wJfAVpGvOYpzLBQERbvCUHQFX8/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
-                { title: "Bloc 03", duration: "01:38", videoSrc: "https://drive.google.com/file/d/1h4ScAdG109gYQsIoQ5IFDMIVQQAuUj_7/preview", thumbnail: "https://lh3.googleusercontent.com/d/14nUfllTZTM086UJny7PQx2P1oY9uYvV4" },
-                { title: "Question 01", duration: "02:50", videoSrc: "https://drive.google.com/file/d/1Ndjjb5-iSlHnTlDcvBNAuA8I-2Sv0h-N/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 02", duration: "05:32", videoSrc: "https://drive.google.com/file/d/1qgamJp4AVMAoNsb7Lp0wYw4jzNAsY1VT/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 03", duration: "05:28", videoSrc: "https://drive.google.com/file/d/1ZEE4wl-SPSVFrX-_8LbZtq6YiPgALVXH/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 04", duration: "04:27", videoSrc: "https://drive.google.com/file/d/1WZz3D-1SbbXDsLE2KtJDP5pDHCzaqt8r/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 05", duration: "16:45", videoSrc: "https://drive.google.com/file/d/18vGN7LH2uLScbv04NHLCTj2zS92saiq-/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 06", duration: "09:47", videoSrc: "https://drive.google.com/file/d/1vf-5sLKmN4iyUtWIk3Kk8wV5vbaRQeBg/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 07", duration: "04:38", videoSrc: "https://drive.google.com/file/d/1lm0RrBiTqFdi41o28hT5pv93kPdLWzai/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 08", duration: "03:07", videoSrc: "https://drive.google.com/file/d/1wGrBLI68Gs2VB_Zm_h2drZBDVQddi1ry/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" },
-                { title: "Question 09", duration: "05:21", videoSrc: "https://drive.google.com/file/d/1yrf3GJzwzTbfEdr1vylkOgrGfar0xDHK/preview", thumbnail: "https://lh3.googleusercontent.com/d/1SKh5ZuecieMsQSQa7Bzzez62r73YHo2n" }
-            ],
-            "Balado 04": [
-                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
-            ],
-            "Balado 05": [
-                { title: "Bloc 01", duration: "00:00", videoSrc: "", thumbnail: "" }
-            ]
-        };
-
-        // Génération dynamique des sliders de pré-montage
-        const preMontageContainer = document.getElementById('pre-montage-container');
-
-        Object.keys(preMontageData).forEach((baladoName, index) => {
-            const sliderId = `slider-${index + 1}`;
-            const items = preMontageData[baladoName];
-
-            const sectionDiv = document.createElement('div');
-            sectionDiv.className = index === Object.keys(preMontageData).length - 1 ? "mb-4" : "mb-12";
-
-            let cardsHtml = '';
-            items.forEach(item => {
-                const hasVideo = item.videoSrc && item.videoSrc !== "";
-                const thumbnailImg = item.thumbnail 
-                    ? `<img src="${item.thumbnail}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover">` 
-                    : '';
-
-                if (hasVideo) {
-                    cardsHtml += `
-                        <div class="flex-none w-80 sm:w-96 bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm">
-                            <div class="relative aspect-video bg-slate-900 cursor-pointer open-modal group flex items-center justify-center" data-video-src="${item.videoSrc}">
-                                ${thumbnailImg}
-                                <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/25 transition-colors flex items-center justify-center">
-                                    <div class="w-12 h-12 rounded-full bg-academic-900/85 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-academic-accent transition-all">
-                                        <svg class="w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    </div>
-                                </div>
-                                <span class="absolute bottom-3 left-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-medium">${item.duration}</span>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-serif font-bold text-academic-900 text-base mb-1">${item.title}</h4>
-                                <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
-                                    <span>${baladoName}</span>
-                                    <span class="font-medium text-academic-900">${item.duration}</span>
-                                </div>
-                            </div>
-                        </div>`;
-                } else {
-                    cardsHtml += `
-                        <div class="flex-none w-80 sm:w-96 bg-white rounded-xl border border-academic-100 overflow-hidden shadow-sm">
-                            <div class="relative aspect-video bg-slate-900 flex items-center justify-center">
-                                <span class="text-white text-sm">Non encore disponible</span>
-                            </div>
-                            <div class="p-6">
-                                <h4 class="font-serif font-bold text-academic-900 text-base mb-1">${item.title}</h4>
-                                <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
-                                    <span>${baladoName}</span>
-                                    <span class="font-medium text-academic-900">${item.duration} min</span>
-                                </div>
-                            </div>
-                        </div>`;
-                }
-            });
-
-            sectionDiv.innerHTML = `
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-xl font-serif font-bold text-academic-900">${baladoName}</h3>
-                    <div class="flex items-center space-x-2">
-                        <button class="slider-prev p-2 rounded-full border border-slate-300 bg-white text-academic-800 hover:bg-slate-100 transition-colors focus:outline-none" data-target="${sliderId}" aria-label="Précédent">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                        </button>
-                        <button class="slider-next p-2 rounded-full border border-slate-300 bg-white text-academic-800 hover:bg-slate-100 transition-colors focus:outline-none" data-target="${sliderId}" aria-label="Suivant">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </button>
-                    </div>
-                </div>
-                <div id="${sliderId}" class="flex space-x-6 overflow-x-auto no-scrollbar scroll-smooth pb-4 pt-2 px-1">
-                    ${cardsHtml}
-                </div>`;
-
-            preMontageContainer.appendChild(sectionDiv);
-        });
-
-        // Contrôles de défilement horizontal Netflix-style
-        document.querySelectorAll('.slider-prev').forEach(button => {
-            button.addEventListener('click', () => {
-                const targetId = button.getAttribute('data-target');
-                const container = document.getElementById(targetId);
-                if (container) {
-                    container.scrollBy({ left: -350, behavior: 'smooth' });
-                }
-            });
-        });
-
-        document.querySelectorAll('.slider-next').forEach(button => {
-            button.addEventListener('click', () => {
-                const targetId = button.getAttribute('data-target');
-                const container = document.getElementById(targetId);
-                if (container) {
-                    container.scrollBy({ left: 350, behavior: 'smooth' });
-                }
             });
         });
 
